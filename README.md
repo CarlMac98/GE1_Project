@@ -6,9 +6,9 @@ The idea of the project is to mesh together procedural generation, music, gaming
 
 ## Resources
 ### Some examples that inspired me
--[From last year projects](https://youtu.be/ALuans6N6X0?list=PL1n0B6z4e_E5qaYwUOlJ63XI2OR9ty7Bs)
--[Music Visualizer](https://unitylist.com/p/amw/Unity-music-visualizer)
+- [From last year projects](https://youtu.be/ALuans6N6X0?list=PL1n0B6z4e_E5qaYwUOlJ63XI2OR9ty7Bs)
+- [Music Visualizer](https://unitylist.com/p/amw/Unity-music-visualizer)
 
 ### Some Tutorials
--[World Generation](https://gamedevacademy.org/complete-guide-to-procedural-level-generation-in-unity-part-1/)
--[Procedural Generation](https://www.youtube.com/playlist?list=PLuldlT8dkudoNONqbt8GDmMkoFbXfsv9m)
+- [World Generation](https://gamedevacademy.org/complete-guide-to-procedural-level-generation-in-unity-part-1/)
+- [Procedural Generation](https://www.youtube.com/playlist?list=PLuldlT8dkudoNONqbt8GDmMkoFbXfsv9m)
