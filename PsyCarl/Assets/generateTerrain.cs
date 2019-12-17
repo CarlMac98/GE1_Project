@@ -37,12 +37,14 @@ public class generateTerrain : MonoBehaviour
         zOffset = Random.Range(0f, 9999f);
 
         transform.position = new Vector3(-xSize / 2, 0, -zSize / 2);
+
+        CreateShape();
+        UpdateMesh();
     }
 
     void Update()
     {
-        CreateShape();
-        UpdateMesh();
+ 
     }
 
     private void CreateShape()
@@ -103,9 +105,16 @@ public class generateTerrain : MonoBehaviour
         for (int i = 0, z = 0; z <= zSize; z++)
         {
             for (int x = 0; x <= xSize; x++)
-            {
-                float height = Mathf.InverseLerp(minH, maxH, vertices[i].y);
-                colors[i] = gradient.Evaluate(height);
+            { 
+                if (vertices[i].y > -10)
+                {
+                    float height = Mathf.InverseLerp(-10, maxH, vertices[i].y);
+                    colors[i] = gradient.Evaluate(height);
+                }
+                else
+                {
+                    colors[i] = new Color(255, 255, 0);
+                }
                 i++;
             }
         }
