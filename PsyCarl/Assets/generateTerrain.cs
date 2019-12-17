@@ -10,8 +10,8 @@ public class generateTerrain : MonoBehaviour
     Vector3[] vertices;
     int[] triangles;
 
-    public int xSize = 20;
-    public int zSize = 20;
+    private int xSize = 200;
+    private int zSize = 200;
 
     float maxH;
     float minH;
@@ -36,7 +36,7 @@ public class generateTerrain : MonoBehaviour
         xOffset = Random.Range(0f, 9999f);
         zOffset = Random.Range(0f, 9999f);
 
-        
+        transform.position = new Vector3(-xSize / 2, 0, -zSize / 2);
     }
 
     void Update()
@@ -78,11 +78,13 @@ public class generateTerrain : MonoBehaviour
         triangles = new int[xSize * zSize * 6];
 
         int tr = 0, vr = 0;
+        //int maxsize = Mathf.Max(xSize, zSize);
 
         for (int z = 0; z < zSize; z++)
         {
             for (int x = 0; x < xSize; x++)
             {
+
                 triangles[tr] = vr;
                 triangles[tr + 1] = vr + xSize + 1;
                 triangles[tr + 2] = vr  + 1;
