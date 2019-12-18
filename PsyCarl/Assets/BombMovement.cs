@@ -16,8 +16,9 @@ public class BombMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+    
 
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "Player")
         {
             hit = true;
 

@@ -15,7 +15,7 @@ public class OnHit : MonoBehaviour
     
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "Player")
         {
             hit = true;
             
@@ -24,7 +24,12 @@ public class OnHit : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        
+        if (collision.gameObject.tag == "Bomb")
+        {
+            Destroy(gameObject);
+
+        }
+
     }
 
 
