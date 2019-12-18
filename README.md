@@ -15,5 +15,14 @@ You can control the PsyEyeSatellite with the following controls:
 - F : decrease altitude
 - LShift : increase speed
 - LeftMouse/Space : fire
+## Further notes
+I used some of the code written in class during the lessons by the professor modifying them, specifically:
+
+- the Controller script, for the movement of the player
+- the AudioAnalyzer 
+
+I'm proud that this scene works in a proper way and it meshes procedural generation, music and classic TPS gameplay. With a further more work this could be a nice game or artistic experience.
+
+[VideoDemo](https://www.youtube.com/watch?v=Ws7HUeE0_as)
 
 
