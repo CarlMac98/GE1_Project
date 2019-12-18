@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OnHit : MonoBehaviour
-{
-    List<Transform> childs = new List<Transform>();
+{ 
     private Transform fireball;
     //GameObject sun = new GameObject();
     private bool hit;

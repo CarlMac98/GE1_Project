@@ -12,7 +12,17 @@ public class BombMovement : MonoBehaviour
 
     Vector3 initialPos = new Vector3();
     Vector3 floating = new Vector3();
-    
+    private bool hit = false;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+
+        if (collision.gameObject.tag == "Bullet")
+        {
+            hit = true;
+
+        }
+    }
 
 
     // Start is called before the first frame update
@@ -22,7 +32,6 @@ public class BombMovement : MonoBehaviour
         var = UnityEngine.Random.Range(2f, 15f);
         initialPos = transform.position;
 
-        StartCoroutine(LetEmFloat());
 
         
     }
@@ -30,20 +39,19 @@ public class BombMovement : MonoBehaviour
    
     // Update is called once per frame
     void Update()
-    { 
-        
-    }
-
-    IEnumerator LetEmFloat()
     {
-        floating = initialPos;
+        if (!hit)
+        {
+            floating = initialPos;
 
-        transform.Rotate(new Vector3(0f, Time.deltaTime * degreesPerSecond, 0f));
+            transform.Rotate(new Vector3(0f, Time.deltaTime * degreesPerSecond, 0f));
 
-        floating.y += Mathf.Sin(Time.fixedTime * Mathf.PI * floVel / 4) * var;
-        transform.position = floating;
-        yield return null;
+            floating.y += Mathf.Sin(Time.fixedTime * Mathf.PI * floVel / 4) * var;
+            transform.position = floating;
+        }
     }
+
+   
 
     /*private void OnCollisionEnter(Collision collision)
     {
