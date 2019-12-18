@@ -2,13 +2,18 @@
 ### *Games Engines 1 assignment - Carlo Macrì, D19123747*
 
 ## Description
-The idea of the project is to mesh together procedural generation, music, gaming and a bit of psychedelia. The user will control a carachter that will be able to shot and interact with the objects in the scene. The whole world and objects will act as a sort of music visualizer and our protagonist, by interacting with flying objects (probably strange one-big-eyed creatures), will let them fall and divide into objects on earth still reacting on music. The number of flying creatures will be constant and they will be generated procedurally.
+This project let us control a flying satellite/eye in an alien world (generated procedurally), full of bombs and music. The bombs react to music and there is a black sun floating upon the scene. By firing and hitting the bombs, these will go into the sun, getting destroyed. Still the number of bombs in the scene will be constant.
+## Controls
+You can control the PsyEyeSatellite with the following controls:
 
-## Resources
-### Some examples that inspired me
-- [From last year projects](https://youtu.be/ALuans6N6X0?list=PL1n0B6z4e_E5qaYwUOlJ63XI2OR9ty7Bs)
-- [Music Visualizer](https://unitylist.com/p/amw/Unity-music-visualizer)
+- W : forward
+- A : left
+- S : backward
+- D : right
+- MouseMovement : move visual
+- E : increase altitude
+- F : decrease altitude
+- LShift : increase speed
+- LeftMouse/Space : fire
 
-### Some Tutorials
-- [World Generation](https://gamedevacademy.org/complete-guide-to-procedural-level-generation-in-unity-part-1/)
-- [Procedural Generation](https://www.youtube.com/playlist?list=PLuldlT8dkudoNONqbt8GDmMkoFbXfsv9m)
+
