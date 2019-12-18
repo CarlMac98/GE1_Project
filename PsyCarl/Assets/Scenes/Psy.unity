@@ -405,7 +405,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8b1139381699d3e4c978d46a47b1046b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ac059e570ce69274e9d3d1564f1c4ee5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -504,7 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useMic: 0
-  clip: {fileID: 8300000, guid: 8b1139381699d3e4c978d46a47b1046b, type: 3}
+  clip: {fileID: 8300000, guid: ac059e570ce69274e9d3d1564f1c4ee5, type: 3}
   amgMic: {fileID: -7324355072922565872, guid: 7ac9b97bbd71d13448b0c746dca293f9, type: 2}
   amgMaster: {fileID: 24300002, guid: 7ac9b97bbd71d13448b0c746dca293f9, type: 2}
   selectedDevice: 

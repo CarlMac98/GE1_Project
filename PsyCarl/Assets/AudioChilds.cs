@@ -26,7 +26,7 @@ public class AudioChilds : MonoBehaviour
         for (int i = 0; i < childs.Count; i++)
         {
             Vector3 ls = childs[i].transform.localScale;
-            ls.z = Mathf.Lerp(ls.z, 1 + (AudioAnalyzer.bands[b] * scale), Time.deltaTime * 3.0f);
+            ls.z = Mathf.Lerp(ls.z, 1 + (AudioAnalyzer.bands[b] * scale), Time.deltaTime * 7.0f);
             childs[i].transform.localScale = ls;
         }
     }
