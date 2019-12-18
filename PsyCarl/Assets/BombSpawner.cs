@@ -5,7 +5,7 @@ using UnityEngine;
 public class BombSpawner : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int maxBombs = 10, rng = 30;
+    public int maxBombs = 10, rng = 50;
     public GameObject bombs;
     public Transform player;
 

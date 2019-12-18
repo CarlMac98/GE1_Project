@@ -19,7 +19,7 @@ public class Shooting : MonoBehaviour
     {
         while (true)
         {
-            if (Input.GetButton("Fire1") || Input.GetKey(KeyCode.Mouse0))
+            if (Input.GetButton("Fire1") || Input.GetKey(KeyCode.Space))
             {
                 GameObject bullet = GameObject.Instantiate<GameObject>(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
                 yield return new WaitForSeconds(1.0f / fireRate);
